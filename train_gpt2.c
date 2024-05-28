@@ -27,7 +27,9 @@ There will be other versions of this code that specialize it and make it fast.
 #include "tokenizer.h"
 // defines: dataloader_init, dataloader_reset, dataloader_next_batch, dataloader_free
 #include "dataloader.h"
-
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
 // ----------------------------------------------------------------------------
 // all the individual layers' forward and backward passes
 // B = batch_size, T = sequence_length, C = channels 词向量维度, V = vocab_size
