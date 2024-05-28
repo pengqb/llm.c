@@ -30,7 +30,7 @@ There will be other versions of this code that specialize it and make it fast.
 
 // ----------------------------------------------------------------------------
 // all the individual layers' forward and backward passes
-// B = batch_size, T = sequence_length, C = channels, V = vocab_size
+// B = batch_size, T = sequence_length, C = channels 词向量维度, V = vocab_size
 
 void encoder_forward(float* out,
                    int* inp, float* wte, float* wpe,
@@ -529,7 +529,7 @@ typedef struct {
     int padded_vocab_size; // padded to e.g. %128==0, 50304
     int num_layers; // number of layers, e.g. 12
     int num_heads; // number of heads in attention, e.g. 12
-    int channels; // number of channels, e.g. 768
+    int channels; // number of channels 词向量维度Word Embeddings, e.g. 768
 } GPT2Config;
 
 // the parameters of the model

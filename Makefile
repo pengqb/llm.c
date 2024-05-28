@@ -1,5 +1,5 @@
 CC ?= clang
-CFLAGS = -Ofast -Wno-unused-result -Wno-ignored-pragmas -Wno-unknown-attributes
+CFLAGS = -Ofast -Wno-unused-result -Wno-ignored-pragmas -Wno-unknown-attributes -std=gnu99
 LDFLAGS =
 LDLIBS = -lm
 INCLUDES =
